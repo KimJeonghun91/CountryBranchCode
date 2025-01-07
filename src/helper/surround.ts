@@ -122,7 +122,7 @@ function padNumber(value: number, zoomLevel: number): string {
   const stringValue = value.toString();
   return stringValue.padStart(targetLength, '0').slice(-targetLength);
 }
-=======
+
 export function getSurroundingCbcGrid(centerCbc: [string, number, number]): [string, string, string][] {
   const hangeulX = ['가', '나', '다', '라', '마', '바', '사'];
   const hangeulY = ['가', '나', '다', '라', '마', '바', '사', '아'];
@@ -168,7 +168,7 @@ export function getSurroundingCbcGrid(centerCbc: [string, number, number]): [str
 
   const directions = [
     [-1, 1],  [0, 1],  [1, 1],
-    [-1, 0],           [1, 0],
+    [-1, 0],  [0, 0],  [1, 0],
     [-1, -1], [0, -1], [1, -1]
   ];
 
